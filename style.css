@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+/*---------nav-section--------*/
+.header{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.top-nav{
+    width: 100%;
+    height: 35px;
+    background-color: #66b32f;
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-inline: 20px;
+}
+.top-nav .left-nav{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+}
+.left-nav .text-left{
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.left-nav .search-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-nav-2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(245, 243, 243, 0.599);
+}
+.top-nav-2 .top-inner{
+    width: 75%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-inner .top-right ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    opacity:.7;
+    margin-block: 50px;
+    
+}
+.top-inner .top-right ul li a{
+    text-decoration: none;
+    color: black;
+    opacity: .7;
+
+}
+.top-inner .top-right ul li a:hover{
+    text-decoration: underline;
+}
+.first-sec{
+    width: 100%;
+    height: 540px;
+    background-image: url("./assets/bg_test.jpg");
+    background-position: center;
+    background-size: cover;
+    position: sticky;
+    top: -100px;
+}
+.main-content{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.main-content-inner{
+    width: 100%;
+    height: 100vh;
+    background-color: #f2f2f2;
+    position: absolute;
+    top: -120px;
+    display: flex;
+    justify-content: center;
+}
+.blog-content{
+    width: 75%;
+    height: auto;
+}
+.blog-content .cards{
+    display: flex;
+    gap: 25px;
+    margin-top: 65px;
+}
+.cards .card{
+    border: none;
+    border-radius: 0px;
+    width: 31.6rem;
+}
+.card .card-body{
+    background-color:#f2f2f2;
+}
+.cards .card img{
+    border-radius: 0;
+}
+.card .card-title{
+    font-size:1.7rem;
+}
+.card .card-text{
+    font-size: .8rem;
+    opacity: .8;
+}
+.blog-content .p-font{
+    text-align: center;
+    font-size: 2.6rem;
+    line-height: 50px;
+    margin-block: 30px;
+}
+/* footer-section */
+.footer{
+    width: 100%;
+    height: 40vh;
+    background-color: #212121;
+    position: relative;
+    top: 545px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+.footer-one{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-one .left-side{
+    width: 70%;
+}
+.left-elem{
+    line-height: 2px;
+    font-size: .8rem;
+    opacity: .8;
+}
+.left-p{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.footer-two{
+    background-color: #111111;
+    width: 100%;
+    height:55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 260px;
+}
+.inner-footer-two{
+    display: flex;
+    width: 75%;
+    height: auto;
+    position: relative;
+    top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .8rem;
+    opacity: .4;
+}
+.right-two{
+    display: flex;
+    gap: 20px;
+}
+.right-two > p > a{
+    text-decoration: none;
+    color: white;
+}
+.right-two p a:hover{
+    text-decoration: underline;
+}
+
+@media  (max-width:768px){
+    .top-right{
+        display: none;
+    }
+    .top-left{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .blog-content .p-font{
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    .right-side img{
+        width: 60px;
+    }
+    .footer-one{
+        width: 95%;
+    }
+    .blog-content{
+       width: 95%;
+    }
+    .cards{
+        width: 100%;
+        flex-direction: column;
+    }
+    .cards .card{
+        width: 41rem;
+    }
+    .footer{
+        position: relative;
+        top: 1100px;
+    }
+    .main-content-inner{
+        width: 100%;
+        height: 210vh;
+    }
+    .footer-two{
+        position: absolute;
+        top: 230px;
+    }
+}
